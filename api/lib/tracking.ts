@@ -45,6 +45,7 @@ export enum AppEvent {
   GetSession = 'Get Session',
   CreateSession = 'Create Session',
   UpdateSession = 'Update Session',
+  ArchiveSession = 'Archive Session',
   DeleteSession = 'Delete Session',
   CompleteSession = 'Complete Session',
   UpdateUser = 'Update User',
@@ -53,6 +54,7 @@ export enum AppEvent {
   GetCharacter = 'Get Character',
   CreateCharacter = 'Create Character',
   UpdateCharacter = 'Update Character',
+  SessionAudioUploaded = 'Session Audio Uploaded',
 }
 
 export interface TrackingInfo {

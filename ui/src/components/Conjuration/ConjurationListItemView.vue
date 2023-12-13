@@ -76,7 +76,7 @@ async function dragend() {
     @dragend="dragend"
   >
     <div
-      class="relative md:max-w-[23rem] 3xl:max-w-[40rem] flex cursor-pointer flex-col justify-end rounded-t-xl shadow-xl"
+      class="relative flex cursor-pointer flex-col justify-end rounded-t-xl shadow-xl"
       @click="navigateToViewConjuration(conjuration.id)"
     >
       <div>
