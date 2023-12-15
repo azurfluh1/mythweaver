@@ -68,7 +68,7 @@ async function clickDeleteCollection() {
   const collectionId = props.collection?.id;
   // console.log(collectionId);
   await removeCollection(collectionId);
-  showSuccess({ message: 'Successfully removed conjuration' });
+  showSuccess({ message: 'Successfully removed collection' });
   emit('remove-collection', {
     collectionId,
   });
@@ -138,7 +138,7 @@ async function loadConjurations() {
     @dragleave="dragleave"
   >
     <div
-      class="relative md:max-w-[23rem] 3xl:max-w-[40rem] flex cursor-pointer flex-col justify-end rounded-t-xl shadow-xl"
+      class="relative md:max-w-[23rem] 3xl:max-w-[40rem] flex cursor-pointer flex-col justify-end rounded-t-xl shadow-xl overflow-hidden"
       @click="navigateToViewCollection(collection.id)"
     >
       <div
