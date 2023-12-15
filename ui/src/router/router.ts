@@ -22,6 +22,7 @@ import EarlyAccessView from '@/views/EarlyAccessView.vue';
 import CharactersView from '@/views/CharactersView.vue';
 import ViewSessionPlanning from '@/components/Sessions/ViewSessionPlanning.vue';
 import ViewSessionSummary from '@/components/Sessions/ViewSessionSummary.vue';
+import ViewSessionRecap from '@/components/Sessions/ViewSessionRecap.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -179,6 +180,10 @@ const router = createRouter({
             {
               path: 'planning',
               component: ViewSessionPlanning,
+            },
+            {
+              path: 'recap',
+              component: ViewSessionRecap,
             },
             {
               path: 'summary',
